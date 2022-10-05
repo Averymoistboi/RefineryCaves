@@ -14,13 +14,73 @@ end
 end)
     print("pressed button Teleport ore to sellary")
     
-   window:Button("Teleport ore to plot", function()
+   window:Button("Teleport ore to plot 1", function()
+       local findParts = workspace.Grabable:GetChildren();
+for i,v in pairs(findParts) do
+local owner = v:FindFirstChild("Owner")
+if owner and owner.Value == game.Players.LocalPlayer then
+print(owner)
+owner.Parent.Part.CFrame = CFrame.new(game:GetService("Workspace").Plots.Plot1.Base.Position) + Vector3.new(math.random(-8,8),owner.Parent.Part.Size.Y/2,math.random(-8,8))
+end
+end
+   print("pressed button")
+end)
+
+   window:Button("Teleport ore to plot 2", function()
+       local findParts = workspace.Grabable:GetChildren();
+for i,v in pairs(findParts) do
+local owner = v:FindFirstChild("Owner")
+if owner and owner.Value == game.Players.LocalPlayer then
+print(owner)
+owner.Parent.Part.CFrame = CFrame.new(game:GetService("Workspace").Plots.Plot2.Base.Position) + Vector3.new(math.random(-8,8),owner.Parent.Part.Size.Y/2,math.random(-8,8))
+end
+end
+   print("pressed button")
+end)
+
+   window:Button("Teleport ore to plot 3", function()
+       local findParts = workspace.Grabable:GetChildren();
+for i,v in pairs(findParts) do
+local owner = v:FindFirstChild("Owner")
+if owner and owner.Value == game.Players.LocalPlayer then
+print(owner)
+owner.Parent.Part.CFrame = CFrame.new(game:GetService("Workspace").Plots.Plot3.Base.Position) + Vector3.new(math.random(-8,8),owner.Parent.Part.Size.Y/2,math.random(-8,8))
+end
+end
+   print("pressed button")
+end)
+
+   window:Button("Teleport ore to plot 4", function()
        local findParts = workspace.Grabable:GetChildren();
 for i,v in pairs(findParts) do
 local owner = v:FindFirstChild("Owner")
 if owner and owner.Value == game.Players.LocalPlayer then
 print(owner)
 owner.Parent.Part.CFrame = CFrame.new(game:GetService("Workspace").Plots.Plot4.Base.Position) + Vector3.new(math.random(-8,8),owner.Parent.Part.Size.Y/2,math.random(-8,8))
+end
+end
+   print("pressed button")
+end)
+
+   window:Button("Teleport ore to plot 5", function()
+       local findParts = workspace.Grabable:GetChildren();
+for i,v in pairs(findParts) do
+local owner = v:FindFirstChild("Owner")
+if owner and owner.Value == game.Players.LocalPlayer then
+print(owner)
+owner.Parent.Part.CFrame = CFrame.new(game:GetService("Workspace").Plots.Plot5.Base.Position) + Vector3.new(math.random(-8,8),owner.Parent.Part.Size.Y/2,math.random(-8,8))
+end
+end
+   print("pressed button")
+end)
+
+   window:Button("Teleport ore to plot 6", function()
+       local findParts = workspace.Grabable:GetChildren();
+for i,v in pairs(findParts) do
+local owner = v:FindFirstChild("Owner")
+if owner and owner.Value == game.Players.LocalPlayer then
+print(owner)
+owner.Parent.Part.CFrame = CFrame.new(game:GetService("Workspace").Plots.Plot6.Base.Position) + Vector3.new(math.random(-8,8),owner.Parent.Part.Size.Y/2,math.random(-8,8))
 end
 end
    print("pressed button")
